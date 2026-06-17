@@ -1,0 +1,44 @@
+🏆 BOLÃO DA COPA 2026
+====================
+
+ARQUIVOS
+--------
+  index.html   →  Site do bolão (abre no navegador)
+  server.py    →  Servidor local (Python)
+  admin.py     →  Painel de administração (Python)
+  dados.json   →  Criado automaticamente ao usar o site
+
+COMO USAR
+---------
+
+1. Coloque os 3 arquivos (index.html, server.py, admin.py) na mesma pasta.
+
+2. Abra o terminal no VS Code (Terminal > New Terminal).
+
+3. Para rodar o servidor:
+      python server.py
+
+4. Abra o navegador em:
+      http://localhost:8000
+
+5. Cada pessoa acessa o site, digita seu nome e faz os palpites.
+   Os dados ficam salvos no arquivo dados.json.
+
+6. Para ver o ranking e gerenciar o bolão:
+      python admin.py   (em outro terminal)
+
+REQUISITOS
+----------
+  Python 3.8 ou superior (sem bibliotecas externas necessárias)
+
+DICAS
+-----
+  - O site funciona em qualquer celular/computador na mesma rede Wi-Fi.
+    Para isso, troque "localhost" por seu IP local no server.py:
+      HOST = "0.0.0.0"
+    E acesse pelo IP da máquina, ex: http://192.168.1.10:8000
+
+  - Para alterar os jogos, edite a lista MATCHES no index.html
+    e a lista PARTIDAS no admin.py.
+
+  - O arquivo dados.json guarda tudo. Faça backup antes de Copa!
